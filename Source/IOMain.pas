@@ -190,7 +190,7 @@ Begin
     Begin
       If LastProgress<>0 Then
         Begin
-          Write('Saveing Data.');
+          Write('Saving Data.');
           LastProgress := Progress;
         End;
     End
@@ -199,7 +199,7 @@ Begin
       If LastProgress<>100 Then
         Begin
           WriteLn();
-          WriteLn('Saveing Finished');
+          WriteLn('Saving Finished');
           LastProgress := Progress;
         End;
     End
