@@ -501,6 +501,7 @@ Begin
     Progress.StartTransform(InputData.RecordCount);
     SetLength(OutputData, InputData.RecordCount);
     LastRecordIndex := InputData.RecordCount-1;
+    InputData.RecordNumber := -1; { Force BOF to ensure first row is parsed correctly. }
     For RecordIndex := 0 To LastRecordIndex Do
       Begin
         { Construct Input coordinates. }
