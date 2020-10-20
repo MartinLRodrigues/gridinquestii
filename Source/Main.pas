@@ -109,7 +109,7 @@ Type
     Procedure DataDrawGridSelection(Sender: TObject; aCol, aRow: Integer);
     Procedure ReCenterActionExecute(Sender: TObject);
     Procedure SaveActionExecute(Sender: TObject);
-    procedure SaveOutputActionExecute(Sender: TObject);
+    Procedure SaveOutputActionExecute(Sender: TObject);
     Procedure TransformActionExecute(Sender: TObject);
     Procedure UnloadActionExecute(Sender: TObject);
     Procedure ZoomInActionExecute(Sender: TObject);
