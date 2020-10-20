@@ -136,6 +136,7 @@ Type
     Procedure DoLoadProgress(Sender: TObject; Progress: Integer);
     Procedure DoParseProgress(Sender: TObject; Progress: Integer);
     Procedure SetPanelFormattingOptions(DataPanel: TCoordinatesEntryPanel; Settings: TFormatSettings);
+    Procedure SetInitialSize;
     Procedure CoordinateTypeAndSettingsToOptionsAndDecimalPlaces(Const CoordinateType: TCoordinateType; Const Settings: TFormatSettings;
                                                                  Out Options: TTypedOptions; Out DecimalPlaces, HeightDecimalPlaces: Integer);
   Public
@@ -174,8 +175,7 @@ Const
 Procedure TMainForm.FormCreate(Sender: TObject);
 Begin
   ReadConfigOptions;
-  If Screen.Width<1200 Then
-    Width := Screen.Width;
+  SetInitialSize;
   ProgressDisplay := CreateProgressDisplay();
   ManualFileName := ChangeFileExt(Application.ExeName, '.pdf');
   ManualAction.Enabled := FileExists(ManualFileName);
@@ -1044,7 +1044,18 @@ Begin
   DataPanel.Refresh;
 End;
 
-Procedure TMainForm.CoordinateTypeAndSettingsToOptionsAndDecimalPlaces(Const CoordinateType: TCoordinateType; Const Settings: TFormatSettings; Out Options: TTypedOptions; Out DecimalPlaces, HeightDecimalPlaces: Integer);
+Procedure TMainForm.SetInitialSize;
+Begin
+  If Screen.Width<1200 Then
+    Width := Screen.Width
+  Else
+    Width := (4*Screen.Width) Div 5;
+  Height := (4*Screen.Height) Div 5;
+End;
+
+Procedure TMainForm.CoordinateTypeAndSettingsToOptionsAndDecimalPlaces(
+  Const CoordinateType: TCoordinateType; Const Settings: TFormatSettings; Out
+  Options: TTypedOptions; Out DecimalPlaces, HeightDecimalPlaces: Integer);
 Begin
   Options := [];
   Case CoordinateType Of
