@@ -195,7 +195,16 @@ Begin
   SidePanel.Font.Size := 12;
   {$ELSE}
     {$IFDEF Darwin}
-    SidePanel.Font.Size := 14;
+      {$IFDEF LCLCocoa}
+      SidePanel.Font.Size := 10;
+      {$ELSE}
+      SidePanel.Font.Size := 14;
+      {$ENDIF}
+    // TODO: get this to work, better than assuming retina for all LCL Cocoa.
+    //If GetCanvasScaleFactor>1.0 Then
+    //  SidePanel.Font.Size := 10
+    //Else
+    //  SidePanel.Font.Size := 14;
     {$ELSE}
     SidePanel.Font.Size := 10;
     {$ENDIF}
