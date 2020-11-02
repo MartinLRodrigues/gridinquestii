@@ -25,7 +25,7 @@ if sys.platform.startswith('win'):
 elif sys.platform.startswith('linux'):
   LibName = "libgiq.so"
 elif sys.platform.startswith('darwin'):
-  LibName = "libGIQ.dylib"
+  LibName = "libgiq.dylib"
 
 # Construct the GIQ library file path.
 LibFolder = os.path.split(os.path.realpath(__file__))[0]
