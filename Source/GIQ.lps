@@ -2,14 +2,13 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="9"/>
+    <Version Value="11"/>
     <BuildModes Active="Release"/>
     <Units Count="38">
       <Unit0>
         <Filename Value="GIQ.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="28"/>
         <CursorPos X="43" Y="39"/>
         <UsageCount Value="144"/>
         <Loaded Value="True"/>
@@ -405,5 +404,9 @@
         <Caret Line="43" TopLine="24"/>
       </Position30>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>

@@ -1,12 +1,11 @@
 object MainForm: TMainForm
-  Left = 570
-  Height = 750
-  Top = 182
-  Width = 1200
+  Left = 452
+  Height = 566
+  Top = 126
+  Width = 900
   Caption = 'Grid InQuest II'
-  ClientHeight = 716
-  ClientWidth = 1200
-  DesignTimePPI = 128
+  ClientHeight = 566
+  ClientWidth = 900
   Font.Name = 'Arial'
   Font.Quality = fqCleartype
   Icon.Data = {
@@ -418,22 +417,25 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poScreenCenter
-  LCLVersion = '1.9.0.0'
+  LCLVersion = '2.0.10.0'
   object SidePanel: TPanel
     Left = 0
-    Height = 716
+    Height = 566
     Top = 0
-    Width = 571
+    Width = 428
     Align = alLeft
     BevelOuter = bvNone
-    ClientHeight = 716
-    ClientWidth = 571
+    ClientHeight = 566
+    ClientWidth = 428
+    Font.Name = 'Arial'
+    Font.Quality = fqCleartype
+    ParentFont = False
     TabOrder = 0
     object DataDrawGrid: TDrawGrid
       Left = 0
-      Height = 678
+      Height = 536
       Top = 0
-      Width = 571
+      Width = 428
       Align = alClient
       Color = clDefault
       ColCount = 0
@@ -445,48 +447,53 @@ object MainForm: TMainForm
       ParentFont = False
       RowCount = 0
       TabOrder = 0
-      TitleFont.Quality = fqCleartype
       Visible = False
       OnDrawCell = DataDrawGridDrawCell
       OnSelection = DataDrawGridSelection
     end
     object BottomPanel: TPanel
       Left = 0
-      Height = 38
-      Top = 678
-      Width = 571
+      Height = 30
+      Top = 536
+      Width = 428
       Align = alBottom
       AutoSize = True
-      ClientHeight = 38
-      ClientWidth = 571
+      BorderSpacing.InnerBorder = 4
+      ClientHeight = 30
+      ClientWidth = 428
+      Font.Name = 'Arial'
+      Font.Quality = fqCleartype
+      ParentFont = False
       TabOrder = 1
       Visible = False
       object TransformButton: TButton
-        Left = 434
-        Height = 26
-        Top = 6
-        Width = 131
+        Left = 309
+        Height = 28
+        Top = 1
+        Width = 118
         Action = TransformAction
         Align = alRight
         AutoSize = True
-        BorderSpacing.Around = 5
+        Font.Name = 'Arial'
+        Font.Quality = fqCleartype
+        ParentFont = False
         TabOrder = 0
       end
     end
   end
   object PanelSplitter: TSplitter
-    Left = 571
-    Height = 716
+    Left = 428
+    Height = 566
     Top = 0
-    Width = 5
+    Width = 4
     Beveled = True
     Color = clBtnFace
     ParentColor = False
     ResizeStyle = rsLine
   end
   object MainMenu: TMainMenu
-    Left = 632
-    Top = 8
+    Left = 474
+    Top = 6
     object FileMenuItem: TMenuItem
       Caption = 'File'
       OnClick = FileMenuItemClick
@@ -582,8 +589,8 @@ object MainForm: TMainForm
     end
   end
   object ActionList: TActionList
-    Left = 752
-    Top = 8
+    Left = 564
+    Top = 6
     object LoadAction: TAction
       Caption = '&Load Data Points...'
       OnExecute = LoadActionExecute
@@ -684,21 +691,17 @@ object MainForm: TMainForm
     end
   end
   object OpenPointsDialog: TOpenDialog
-    Width = 28
-    Height = 28
     Title = 'Open Data Points File'
     DefaultExt = '.csv'
     Filter = 'Comma Separated Text|*.csv|Tab Delimited Text|*.tab|General Text|*.txt|All Files|*.*'
-    Left = 872
-    Top = 8
+    Left = 654
+    Top = 6
   end
   object SavePointsDialog: TSaveDialog
-    Width = 28
-    Height = 28
     Title = 'Save Data Points File'
     DefaultExt = '.csv'
     Filter = 'Comma Separated Text|*.csv|Tab Delimited Text|*.tab|General Text|*.txt|All Files|*.*'
-    Left = 992
-    Top = 8
+    Left = 744
+    Top = 6
   end
 end

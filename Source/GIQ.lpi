@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="9"/>
+    <Version Value="11"/>
     <PathDelim Value="\"/>
     <General>
       <Flags>
@@ -22,7 +22,7 @@
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
       <RevisionNr Value="1"/>
-      <BuildNr Value="155"/>
+      <BuildNr Value="156"/>
       <Language Value="0809"/>
       <StringTable Comments="Developed for the three Ordnance Surveys of Britain and Ireland." CompanyName="Michell Computing" FileDescription="Coordinate Transformation Library" LegalCopyright="(c) 2016 Michell Computing" ProductName="Lib Grid InQuest II" ProductVersion="1.01"/>
     </VersionInfo>
@@ -72,9 +72,16 @@
     </PublishOptions>
     <RunParams>
       <local>
-        <FormatVersion Value="1"/>
         <HostApplicationFilename Value="L:\Projects\GridInQuestII\OSGM15.exe"/>
       </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <HostApplicationFilename Value="L:\Projects\GridInQuestII\OSGM15.exe"/>
+          </local>
+        </Mode0>
+      </Modes>
     </RunParams>
     <Units Count="1">
       <Unit0>
