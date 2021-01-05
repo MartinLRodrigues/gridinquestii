@@ -1,0 +1,8 @@
+*.res
+GridInQuestII.app
+GridInQuestII
+giqtrans
+libgiq.dylib
+osgmupdate
+Lib/x86_64-darwin
+Source/backup
