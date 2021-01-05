@@ -90,12 +90,7 @@ Type
 
 Implementation
 
-{TODO: Remove the need for Mac define when OSX resource compiler working. }
-{$IFDEF Darwin}
-  {$R Countries.res}
-{$ELSE}
-  {$R Countries.rc}
-{$ENDIF}
+{$R Countries.rc}
 
 Var
   CountryData: TCountryGeometryArray;
