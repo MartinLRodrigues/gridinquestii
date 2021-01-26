@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridInQuestII.Examples.CSharp", "GridInQuestII.Examples.CSharp\GridInQuestII.Examples.CSharp.csproj", "{306493E6-09FA-42A1-8D5D-00B8F69C303F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridInQuestII.Wrapper.CSharp", "GridInQuestII.Wrapper.CSharp\GridInQuestII.Wrapper.CSharp.csproj", "{F8FC2889-C1B7-4AAF-91CC-EC877CE364CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{306493E6-09FA-42A1-8D5D-00B8F69C303F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306493E6-09FA-42A1-8D5D-00B8F69C303F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306493E6-09FA-42A1-8D5D-00B8F69C303F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306493E6-09FA-42A1-8D5D-00B8F69C303F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8FC2889-C1B7-4AAF-91CC-EC877CE364CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8FC2889-C1B7-4AAF-91CC-EC877CE364CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8FC2889-C1B7-4AAF-91CC-EC877CE364CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8FC2889-C1B7-4AAF-91CC-EC877CE364CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C0A023F-F4D9-41B0-8262-C3B25B972CA4}
+	EndGlobalSection
+EndGlobal
